@@ -3,21 +3,30 @@ body {
   background-image: url("Home.png");
 
   color:white;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bolder;
+
 }
 
-.sidebar {
-    height: 100px;
+h1,h2 {
+    font-weight: bolder;
+}
+
+.sidebar-container {
+    height: 100vh;
     padding:20px;
+    background: black;
+    overflow-y: auto;
 }
 
-.sidebar::-webkit-scrollbar {
+.sidebar-container::-webkit-scrollbar {
     width:8px;
 }
 
 .side {
     margin-bottom:35px;
     text-align:center;
+    margin-left:0px;
 }
 
 .box {
@@ -26,6 +35,7 @@ body {
     background: rgb(0, 0, 0);
     border-radius:25px;
     margin-bottom: 10px;
+    box-shadow:0 0 40px #4c47af, 0 0 30px #5b54b6;
 }
 
 .name-button {
@@ -44,18 +54,22 @@ body {
     transition: transform 0.6s ease;
     transform:scale(1.1);
 }
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none;    
+    -ms-overflow-style: none;  
+}
 
-.gbox {
-    height: 250px;
-    background: black;
-    margin-top: 20px;
-    padding: 30px;
-    border-radius:15px;
-
+.gallery::-webkit-scrollbar {
+    display: none; 
 }
 
 .galbox {
-    height: 200px;
+    flex: 0 0 400px;
+    height: 250px;
     background: white;
     border-radius: 20px;
 }
+
