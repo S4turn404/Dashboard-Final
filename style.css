@@ -71,5 +71,7 @@ h1,h2 {
     height: 250px;
     background: white;
     border-radius: 20px;
+    border-color: #4c47af;
+    border: #5b54b6;
 }
 
