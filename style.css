@@ -20,7 +20,7 @@ h2 {
 .header1 {
     display: flex;
     justify-content: flex-end;
-    gap: 120px;
+    gap: 50px;
     padding: 10px;
     background-color: black;
 }
@@ -31,13 +31,19 @@ h2 {
     font-size: 30px;
     font-weight: lighter;
     text-decoration: none;
+    transition: color 0.5s ease;
+
 }
 
 .header1 a:hover {
     color: #6660d8;
-    transition: transform 0.6s ease;
+    transition-delay: 0.6s ease;
 }
 
+.profile img {
+    width:100px;
+
+}
 
 
 .sidebar-container {
@@ -108,3 +114,4 @@ h2 {
 .gallery::-webkit-scrollbar {
     display: none;
 }
+
