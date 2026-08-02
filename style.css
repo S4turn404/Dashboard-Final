@@ -2,14 +2,20 @@ body {
     background-color: black;
     /* background-image: url("Home.jpg"); */
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-
+    background-size: 100%;
     color: white;
     font-family: "DM Sans", sans-serif;
     font-weight: bolder;
 
+
 }
+
+
+.col-lg-9 {
+    padding-top: 70px;
+}
+
+
 
 h1,
 h2 {
@@ -21,8 +27,12 @@ h2 {
     display: flex;
     justify-content: flex-end;
     gap: 50px;
-    padding: 10px;
-    background-color: black;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header1 a {
@@ -38,11 +48,14 @@ h2 {
 .header1 a:hover {
     color: #6660d8;
     transition-delay: 0.6s ease;
+        transform: scale(1.1);
+
+
 }
 
 .profile img {
-    width:100px;
-
+    margin-right: -40px;
+    width: 45px;
 }
 
 
@@ -81,12 +94,15 @@ h2 {
     border-radius: 15px;
     border: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .name-button:hover {
     background: #8f87ff;
     transition: transform 0.6s ease;
     transform: scale(1.1);
+    box-shadow: 0 0 20px 1px #6660d8;
+
 }
 
 .galbox {
@@ -96,6 +112,9 @@ h2 {
     border-radius: 20px;
     border-color: #4c47af;
     border: #5b54b6;
+    box-shadow: 0 0 20px 1px #9e99fa;
+
+
 }
 
 
@@ -107,11 +126,11 @@ h2 {
     gap: 20px;
     scrollbar-width: none;
     background-color: black;
-    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
 
 }
 
 .gallery::-webkit-scrollbar {
     display: none;
 }
-
